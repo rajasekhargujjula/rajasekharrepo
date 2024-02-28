@@ -13,7 +13,7 @@ public class App
         
         App obj=new App();
         obj.hospitalBill(41, 74);
-        obj.hospitalDetails();
+        obj.hospitalDetails("I love ","Doctors.");
         System.out.println(obj.hospitalBill(41, 74));
     }
     public int hospitalBill(int x, int y)
@@ -21,10 +21,11 @@ public class App
     	return x+y;
     }
     
-    public String hospitalDetails()
+    public String hospitalDetails(String s,String s1)
     {
-    
-       return "hospitalDetails";
+     String s2=new String(s);
+      String hospitalDetails=s2.concat(s1);
+       return hospitalDetails;
     		   
     	
     }
